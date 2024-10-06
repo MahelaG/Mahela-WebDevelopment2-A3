@@ -70,3 +70,36 @@ footer {
     bottom: 0;
     width: 100%;
 }
+section {
+    padding: 1rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+form label {
+    grid-column: 1 / span 1;
+}
+
+form input, form select, form button {
+    grid-column: 2 / span 1;
+}
+
+#fundraisers-list, #categories-list {
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
