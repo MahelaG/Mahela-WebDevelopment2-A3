@@ -102,8 +102,22 @@ router.post('/donate', (req, res) => {
             res.status(500).send({error: err.message});
             return;
         }
-        res.send({ success: true, message: 'Donation successful' });
-    });
+
+        var updateQuary = `
+                UPDATE FUNDRAISER
+                SET CURRENT_FUNDING = CURRENT_FUNDING + ?
+                WHERE FUNDRAISER_ID = ?;
+    `;
+        connection.query(updateQuary, [amount, fundraiserId], (err, results) => {
+            if (err) {
+                console.error('Error updating funding:', err);
+                res.status(500).send({error: err.message});
+                return;
+            }
+            res.send({ success: true, message: 'Donation successful' });
+        });   
+    });   
+    
 });
 // 6. Add a new category
 router.post('/categories', (req, res) => {

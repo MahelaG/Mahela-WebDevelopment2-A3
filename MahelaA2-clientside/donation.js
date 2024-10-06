@@ -53,6 +53,10 @@ document.getElementById('donation-form').addEventListener('submit', (event) => {
     .then(data => {
         if (data.success) {
             showMessage('Thank you for your donation!', 'success');
+			
+			// Update the current funding displayed on the page
+            const currentFunding = parseFloat(currentElement.textContent) || 0;
+            currentElement.textContent = (currentFunding + amount).toFixed(2); // Update with new value
             // Optionally, redirect to the fundraiser page or clear the form
         } else {
             showMessage(data.message || 'Failed to process donation.', 'error');
