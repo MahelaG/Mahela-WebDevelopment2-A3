@@ -48,6 +48,15 @@ app.get('/fundraiser.js',(req,res)=>{
     res.sendFile(path.join(__dirname,'../MahelaA2-clientside/fundraiser.js'))
 });
 
+//route to server donation.html
+app.get('/donation',(req,res)=>{
+    res.sendFile(path.join(__dirname,'../MahelaA2-clientside/donation.html'))
+});
+
+//route to server donation.js
+app.get('/donation.js',(req,res)=>{
+    res.sendFile(path.join(__dirname,'../MahelaA2-clientside/donation.js'))
+});
 
 app.use(cors()); // Enable CORS for all routes
 
