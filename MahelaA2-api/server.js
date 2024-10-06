@@ -58,6 +58,16 @@ app.get('/donation.js',(req,res)=>{
     res.sendFile(path.join(__dirname,'../MahelaA2-clientside/donation.js'))
 });
 
+//route to server admin.html
+app.get('/admin',(req,res)=>{
+    res.sendFile(path.join(__dirname,'../MahelaA2-serverside/admin.html'))
+});
+
+//route to server admin.js
+app.get('/admin.js',(req,res)=>{
+    res.sendFile(path.join(__dirname,'../MahelaA2-serverside/admin.js'))
+});
+
 app.use(cors()); // Enable CORS for all routes
 
 
