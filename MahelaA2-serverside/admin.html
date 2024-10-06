@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Crowdfunding Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+
+    <section id="fundraiser-management">
+        <h2>Manage Fundraisers</h2>
+        <form id="fundraiser-form">
+            <input type="hidden" id="fundraiser-id" value="">
+            <label for="fundraiser-caption">Caption:</label>
+            <input type="text" id="fundraiser-caption" required>
+            
+            <label for="fundraiser-organizer">Organizer:</label>
+            <input type="text" id="fundraiser-organizer" required>
+            
+            <label for="fundraiser-target">Target Funding:</label>
+            <input type="number" id="fundraiser-target" required>
+            
+            <label for="fundraiser-current">Current Funding:</label>
+            <input type="number" id="fundraiser-current" required>
+            
+            <label for="fundraiser-city">City:</label>
+            <input type="text" id="fundraiser-city" required>
+            
+            <label for="fundraiser-category">Category:</label>
+            <select id="fundraiser-category" required>
+                <!-- Categories will be dynamically populated here -->
+            </select>
+
+            <button type="submit">Add Fundraiser</button>
+        </form>
+
+        <h3>Existing Fundraisers</h3>
+        <div id="fundraisers-list">
+            <!-- Fundraisers will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <section id="category-management">
+        <h2>Manage Categories</h2>
+        <form id="category-form">
+            <input type="hidden" id="category-id" value="">
+            <label for="category-name">Category Name:</label>
+            <input type="text" id="category-name" required>
+            <button type="submit">Add Category</button>
+        </form>
+
+        <h3>Existing Categories</h3>
+        <div id="categories-list">
+            <!-- Categories will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>
