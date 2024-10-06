@@ -31,8 +31,13 @@ if (fundraiserId) {
     alert('No fundraiser selected.');
 }
 
+function updateProgressBar(target, current) {
+    const progressPercentage = (current / target) * 100;
+    document.getElementById('progress').style.width = `${progressPercentage}%`;
+}
+
 // Add event listener to "Donate" button
 document.getElementById('donate-btn').addEventListener('click', () => {
-    alert('This feature is under construction.');
+    window.location.href = `donation?id=${fundraiserId}`;
 });
 
