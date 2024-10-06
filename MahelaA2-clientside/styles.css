@@ -103,3 +103,66 @@ button {
 button:hover {
     background-color: #45a049;
 }
+div {
+    margin: 0.5rem 0;
+}
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fundraiser-header {
+    text-align: center;
+}
+
+.progress-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 30px;
+}
+
+#progress {
+    background-color: #28a745;
+    height: 100%;
+    width: 0%; /* Will be updated with JavaScript */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.share-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.share-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.share-button:hover {
+    background-color: #0056b3;
+}
