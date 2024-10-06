@@ -16,17 +16,41 @@
 				</ul>
 			</nav>
 		</header>
-    <div class="container">
-        <h1 id="fundraiser-caption">Fundraiser Title</h1>
-        <p><strong>Organizer:</strong> <span id="fundraiser-organizer"></span></p>
-        <p><strong>City:</strong> <span id="fundraiser-city"></span></p>
-        <p><strong>Category:</strong> <span id="fundraiser-category"></span></p>
-        <p><strong>Target Funding:</strong> $<span id="fundraiser-target"></span></p>
-        <p><strong>Current Funding:</strong> $<span id="fundraiser-current"></span></p>
-        
-        <button id="donate-btn">Donate</button>
-    </div>
-	
+        <div class="container">
+            <div class="fundraiser-header">
+                <h1 id="fundraiser-caption">Fundraiser Title</h1>
+                <p><strong>Organizer:</strong> <span id="fundraiser-organizer"></span></p>
+                <p><strong>City:</strong> <span id="fundraiser-city"></span></p>
+                <p><strong>Category:</strong> <span id="fundraiser-category"></span></p>
+            </div>
+    
+            <div class="progress-section">
+                <p><strong>Target Funding:</strong> $<span id="fundraiser-target"></span></p>
+                <p><strong>Current Funding:</strong> $<span id="fundraiser-current"></span></p>
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <p id="fundraiser-description">
+                <strong>Description:</strong> This fundraiser aims to support the local wellness center to continue providing essential services...
+            </p>
+
+            <button id="donate-btn">Donate Now</button>
+
+            <div class="share-section">
+                <p>Share this fundraiser:</p>
+                <a href="#" class="share-button">Facebook</a>
+                <a href="#" class="share-button">Twitter</a>
+                <a href="#" class="share-button">Instagram</a>
+            </div>
+            
+            <div id="testimonials">
+                <h2>Testimonials</h2>
+                <p>"This center changed my life!" - Sarah</p>
+                <p>"Incredible services and support." - Mark</p>
+            </div>
+        </div>
     <footer>
         <p>Contact us at info@crowdfunding.com.au | Call: +61 234 567 890</p>
     </footer>
