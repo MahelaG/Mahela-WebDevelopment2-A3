@@ -22,6 +22,9 @@ if (fundraiserId) {
             categoryElement.textContent = fundraiser.CATEGORY;
             targetElement.textContent = fundraiser.TARGET_FUNDING;
             currentElement.textContent = fundraiser.CURRENT_FUNDING;
+			
+			// Update the progress bar
+            updateProgressBar(fundraiser.TARGET_FUNDING, fundraiser.CURRENT_FUNDING);
         })
         .catch(error => {
             console.error('Error fetching fundraiser details:', error);
